@@ -1,0 +1,56 @@
+.box {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fffaf2;
+  border-radius: 10px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+
+.emty-cart-image{
+  height: 40vh;
+  width :40vw;
+  margin:10px;
+}
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 2rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.total {
+  margin-top: 2rem;
+  text-align: right;
+  font-size: 1.4rem;
+  color: #444;
+}
+
+.checkout-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background: #3e8e7e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background: #2e7c6a;
+}

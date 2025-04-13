@@ -1,0 +1,45 @@
+.container {
+  padding: 4rem 1rem;
+  color: #444;
+  text-align: center;
+  animation: fade 0.8s ease-in;
+}
+
+.title {
+  color: #fc7070;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.msg {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #888;
+}
+
+.home {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #5dbff0;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home:hover {
+  background-color: #3ca8dc;
+  transform: translateY(-2px);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,105 @@
+.checkout-container {
+  background-image: url('../assets/paym.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.checkout-left,
+.checkout-right {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  margin:10px;
+}
+
+.checkout-left h2,
+.checkout-right h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.billing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.billing-form input {
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 12px;
+  border: 1px solid #ccc;
+  
+}
+
+.billing-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.billing-form button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  padding: 14px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.billing-form button:hover {
+  background: #218838;
+}
+
+.checkout-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px dashed #ccc;
+  font-size: 16px;
+}
+
+.checkout-item:last-child {
+  border-bottom: none;
+}
+
+.checkout-right h3 {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #000;
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .checkout-container {
+   display:flex;
+   flex-direction: column;
+  }
+
+  .checkout-left,
+  .checkout-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .checkout-right h3 {
+    text-align: left;
+  }
+}
