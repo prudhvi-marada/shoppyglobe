@@ -14,22 +14,24 @@
  Under "Specify Username", use: ubuntu
 
  In "Advanced SSH settings", browse and attach your .pem key file
- 
+
  Click "OK" to connect
 
 ### STEP 2: Update and Install Required Packages
 
-sudo apt update && sudo apt upgrade -y
-sudo apt install git curl -y
+sudo apt update 
 
 ### STEP 3: Install Node.js and npm (LTS version)
 
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt install -y nodejs
+sudo apt install  nodejs
+
+sudo apt install  npm
+
 
 ### STEP 4: Clone your GitHub frontend project (replace URL)
 
-git clone https://github.com/your-username/your-frontend-repo.git
+git clone https://github.com/your-username/your-frontend-repo.git 
+
 cd your-frontend-repo  # e.g., cd shoppyglobe
 
 ### STEP 5: Install frontend dependencies
@@ -64,19 +66,26 @@ sudo systemctl enable pm2-ubuntu
 
 ### STEP 12: Add Inbound Rule for Port 5173 in AWS
 
-# Go to EC2 Console → Instances → Select your instance
-# Click on "Security" → Click on the security group → Inbound Rules → Edit Inbound Rules
-# Add a new rule:
-# - Type: Custom TCP
-# - Port: 5173
-# - Source: 0.0.0.0/0
-# Save the rule
+Go to EC2 Console → Instances → Select your instance
+
+Click on "Security" → Click on the security group → Inbound Rules → Edit Inbound Rules
+
+Add a new rule:
+
+ - Type: Custom TCP
+
+ - Port: 5173
+
+ - Source: 0.0.0.0/0
+
+Save the rule
 
 ### STEP 13: Get Public IP and Open in Browser
 
 
-# Open this in your browser:
-# http://<your-public-ip>:5173
+ Open this in your browser:
+
+http://<your-public-ip>:5173
 
 ### OPTIONAL: PM2 Management Commands
 
