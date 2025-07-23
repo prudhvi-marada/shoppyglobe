@@ -5,12 +5,12 @@
 
 ### STEP 1: Connect to EC2 using MobaXterm
 
-# Open MobaXterm
-# Click on "Session" → Choose "SSH"
-# In Remote Host, paste your EC2 Public IP (e.g., 13.60.230.240)
-# Under "Specify Username", use: ubuntu
-# In "Advanced SSH settings", browse and attach your .pem key file
-# Click "OK" to connect
+ Open MobaXterm
+ Click on "Session" → Choose "SSH"
+ In Remote Host, paste your EC2 Public IP (e.g., 13.60.230.240)
+ Under "Specify Username", use: ubuntu
+ In "Advanced SSH settings", browse and attach your .pem key file
+ Click "OK" to connect
 
 ### STEP 2: Update and Install Required Packages
 
