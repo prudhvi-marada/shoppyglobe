@@ -84,7 +84,7 @@ Save the rule
 
  Open this in your browser:
 
-http://<your-public-ip>:5173
+http://your-public-ip:5173
 
 ### OPTIONAL: PM2 Management Commands
 
