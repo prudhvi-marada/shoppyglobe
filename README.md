@@ -61,8 +61,7 @@ pm2 save
 ### STEP 11: Setup PM2 to start on EC2 reboot
 
 pm2 startup
-# Copy the command it prints, for example:
-sudo systemctl enable pm2-ubuntu
+
 
 ### STEP 12: Add Inbound Rule for Port 5173 in AWS
 
@@ -89,17 +88,17 @@ http://<your-public-ip>:5173
 
 ### OPTIONAL: PM2 Management Commands
 
-# View running apps
+### View running apps
 pm2 list
 
-# View logs
+### View logs
 pm2 logs vite-app
 
-# Restart app
+### Restart app
 pm2 restart vite-app
 
-# Stop app
+### Stop app
 pm2 stop vite-app
 
-# Delete app
+### Delete app
 pm2 delete vite-app
